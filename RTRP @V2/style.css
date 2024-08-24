@@ -1,0 +1,112 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    background: #1a1a1d;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Fallback for non-supporting browsers */
+    font-size: 16px; /* Base font size for responsiveness */
+  }
+  
+  /* Container */
+  .container {
+    width: 100%;
+    height: 100vh; /* Aim for full viewport height */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+    gap: 20px;
+    background: #0b0c10;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left and Right Sides */
+  .left,
+  .right {
+    flex: 1 1 48%; /* Minimum width of 48% for each side on large screens */
+    padding: 20px;
+    background: #1f2833;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Textarea */
+  textarea {
+    width: 100%;
+    height: calc(33.33% - 20px); /* 33.33% of available space (excluding label) */
+    background: #4e4e50;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    border: 1px solid #45a29e;
+    font-size: 1rem; /* Use rem for better responsiveness */
+    outline: 0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    resize: vertical;
+  }
+  
+  textarea::placeholder {
+    color: #a5a5a5;
+  }
+  
+  /* Iframe */
+  iframe {
+    width: 100%;
+    background: #0b0c10;
+    height: calc(100% - 20px); /* Remaining space after textarea (excluding label) */
+    border: 1px solid #45a29e;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Labels */
+  label {
+    display: flex;
+    align-items: center;
+    background: #0b0c10;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    color: #66fcf1;
+  }
+  
+  label i {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #66fcf1;
+  }
+  
+  /* Paragraph */
+  p {
+    text-align: center;
+    color: #ecf0f1;
+    margin-top: 20px;
+    font-size: 1rem; /* Use rem for better responsiveness */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    /* Styles for smaller screens (tablets) */
+    .container {
+      flex-direction: column; /* Stack elements vertically */
+    }
+  
+    .left,
+    .right {
+      flex: 1
+    }}  
